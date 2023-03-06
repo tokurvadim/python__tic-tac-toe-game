@@ -74,7 +74,6 @@ def check_for_draw():
     if count_of_moves != 9:
         return True
     else:
-        print("Игра окончена. Боевая ничья!")
         return False
 
 
@@ -109,6 +108,7 @@ def the_game():
         if check_for_draw():
             continue
         else:
+            print("Игра окончена. Боевая ничья!")
             break
 
 count_of_moves = None
